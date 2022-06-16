@@ -28,7 +28,7 @@ You will change this junior code in expert code!
 ---
 ### progress
 - -[x] exercise 1
-- exercise 2
+- -[x] exercise 2
 - exercise 3
 - exercise 4
 - exercise 5
