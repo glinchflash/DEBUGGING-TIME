@@ -28,6 +28,7 @@ You will change this junior code in expert code!
 ---
 ### progress
 - -[x] exercise 1
+    - 
 - -[x] exercise 2
 - -[x] exercise 3
 - -[x] exercise 4

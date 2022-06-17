@@ -28,10 +28,9 @@ new_exercise(3);
 // === Exercise 3 ===
 // This should echo ` "Debugged !" `, fix it so that that is the literal text echo'ed
 
-$str = '“Debugged ! Also very fun”';
-echo substr($str, 0, 13).'"';
+$str = "Debugged ! Also very fun";
 
-
+echo substr($str, 0, 10);
 
 new_exercise(4);
 // === Exercise 4 ===
@@ -74,11 +73,10 @@ new_exercise(6);
 // $name variables are decided as seen in the code, fix all the bugs whilst keeping the functionality!
 $arr = [];
 
-
 function combineNames($str1 = "", $str2 = "") {
     $params = [$str1, $str2];
     foreach($params as $param) {
-        if ($param == "") {
+        if ($param === "") {
             $param = randomHeroName();
         }
     }
@@ -99,9 +97,8 @@ function randomHeroName()
     $hero_firstnames = ["captain", "doctor", "iron", "Hank", "ant", "Wasp", "the", "Hawk", "Spider", "Black", "Carol"];
     $hero_lastnames = ["America", "Strange", "man", "Pym", "girl", "hulk", "eye", "widow", "panther", "daredevil", "marvel"];
     $heroes = [$hero_firstnames, $hero_lastnames];
-    $randname = $heroes[rand(0,count($heroes))][rand(0, 10)];
-
-    echo $randname;
+    $randname = $heroes[rand(0,count($heroes)-1)][rand(0, 10)];
+    return $randname;
 }
 
 echo "Here is the name: " . combineNames();
