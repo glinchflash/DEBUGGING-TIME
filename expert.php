@@ -51,19 +51,13 @@ new_exercise(5);
 // Fix the code so the for loop only pushes a-z in the array
 
 //Original code
-//$arr = [];
-//for ($letter = 'a'; $letter <= 'z'; $letter++) {
-//    array_push($arr, $letter);
-//}
-//
-//print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alfabetical array
-
 $arr = [];
-
-foreach (range('a','z') as $letter){
+for ($letter = 'a'; $letter != 'aa'; $letter++) {
     array_push($arr, $letter);
 }
-print_r($arr);
+
+print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alfabetical array
+
 
 
 new_exercise(6);
