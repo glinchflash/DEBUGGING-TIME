@@ -30,8 +30,8 @@ You will change this junior code in expert code!
 - -[x] exercise 1
 - -[x] exercise 2
 - -[x] exercise 3
-- exercise 4
-- exercise 5
+- -[x] exercise 4
+- -[x] exercise 5
 - exercise 6
 - exercise 7
 - exercise 8
