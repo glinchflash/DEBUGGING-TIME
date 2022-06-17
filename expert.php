@@ -28,9 +28,9 @@ new_exercise(3);
 // === Exercise 3 ===
 // This should echo ` "Debugged !" `, fix it so that that is the literal text echo'ed
 
-$str = "Debugged ! Also very fun";
+$str = '"Debugged ! Also very fun"';
 
-echo substr($str, 0, 10);
+echo substr($str, 0, 11).'"';
 
 new_exercise(4);
 // === Exercise 4 ===
@@ -92,7 +92,7 @@ function randomHeroName()
     $hero_lastnames = ["America", "Strange", "man", "Pym", "girl", "hulk", "eye", "widow", "panther", "daredevil", "marvel"];
     $heroes = [$hero_firstnames, $hero_lastnames];
     $randname = $heroes[rand(0,count($heroes)-1)][rand(0, 10)];
-    return $randname;
+    echo $randname;
 }
 
 echo "Here is the name: " . combineNames();
