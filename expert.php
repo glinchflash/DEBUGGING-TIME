@@ -6,7 +6,7 @@ declare(strict_types=1);
 // Look at the error you get, read it and it should tell you the issue...,
 // sometimes, even your IDE can tell you what's wrong
 echo "Exercise 1 starts here:";
-new_exercise((1);
+new_exercise(1);
 function new_exercise($x) {
     $block = "<br/><hr/><br/><br/>Exercise $x starts here:<br/>";
     echo $block;
