@@ -33,7 +33,7 @@ You will change this junior code in expert code!
 - -[x] exercise 3
 - -[x] exercise 4
 - -[x] exercise 5
-- exercise 6
+- -[x] exercise 6
 - exercise 7
 - exercise 8
 - exercise 9

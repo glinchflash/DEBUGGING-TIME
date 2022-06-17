@@ -67,14 +67,15 @@ new_exercise(6);
 // $name variables are decided as seen in the code, fix all the bugs whilst keeping the functionality!
 $arr = [];
 
-function combineNames($str1 = "", $str2 = "") {
+function combineNames($str1="" , $str2="") {
     $params = [$str1, $str2];
-    foreach($params as $param) {
+    foreach($params as &$param) {
         if ($param === "") {
             $param = randomHeroName();
         }
+
     }
-    echo implode(" - ", $params);
+    return implode(" - ", $params);
 }
 
 
@@ -92,9 +93,10 @@ function randomHeroName()
     $hero_lastnames = ["America", "Strange", "man", "Pym", "girl", "hulk", "eye", "widow", "panther", "daredevil", "marvel"];
     $heroes = [$hero_firstnames, $hero_lastnames];
     $randname = $heroes[rand(0,count($heroes)-1)][rand(0, 10)];
-    echo $randname;
-}
+    return $randname;
 
+}
 echo "Here is the name: " . combineNames();
+
 
 
