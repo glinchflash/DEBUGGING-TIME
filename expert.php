@@ -70,7 +70,7 @@ $arr = [];
 function combineNames($str1="" , $str2="") {
     $params = [$str1, $str2];
     foreach($params as &$param) {
-        if ($param === "") {
+        if ($param == "") {
             $param = randomHeroName();
         }
 
@@ -98,20 +98,23 @@ function randomHeroName()
 }
 echo "Here is the name: " . combineNames();
 
+
 new_exercise(7);
 function copyright(int $year) {
     echo "&copy; $year BeCode";
 }
 //print the copyright
-copyright((int)date('Y'));
+copyright((int) date('Y'));
+
+
 
 new_exercise(8);
 function login(string $email, string $password) {
     if($email == 'john@example.be' && $password == 'pocahontas') {
         echo 'Welcome John';
-        echo ' Smith';
+        return ' Smith<br>';
     }else
-    return  'No access';
+    return  'No access<br>';
 }
 
 //do not change anything below
@@ -122,3 +125,39 @@ echo login('john@example.be', 'dfgidfgdfg');
 //no access
 echo login('wrong@example.be', 'wrong');
 //you can change things again!
+
+new_exercise(9);
+function isLinkValid(string $link) {
+    $unacceptables = array('https:','.doc','.pdf', '.jpg', '.jpeg', '.gif', '.bmp', '.png');
+
+    foreach ($unacceptables as $unacceptable) {
+        if (strpos($link, $unacceptable) > -1) {
+            echo 'Unacceptable Found<br />';
+            return;
+        }
+    }
+    echo 'Acceptable<br />';
+}
+//invalid link
+isLinkValid('http://www.google.com/hack.pdf');
+//invalid link
+isLinkValid('https://google.com');
+//VALID link
+isLinkValid('http://google.com');
+//VALID link
+isLinkValid('http://google.com/test.txt');
+
+
+new_exercise(10);
+
+//Filter the array $areTheseFruits to only contain valid fruits
+//do not change the arrays itself
+$areTheseFruits = ['apple', 'bear', 'beef', 'banana', 'cherry', 'tomato', 'car'];
+$validFruits = ['apple', 'pear', 'banana', 'cherry', 'tomato'];
+//from here on you can change the code
+for($i=0; $i <= count($areTheseFruits)+1; $i++) {
+    if(!in_array($areTheseFruits[$i], $validFruits)) {
+        unset($areTheseFruits[$i]);
+    }
+}
+var_dump($areTheseFruits);//do not change this

@@ -28,13 +28,32 @@ You will change this junior code in expert code!
 ---
 ### progress
 - -[x] exercise 1
-    - 
+    - give parameter to function calling
 - -[x] exercise 2
+    - change index number to the right index
 - -[x] exercise 3
+    - put single quotation marks on string
+    - change offsetLenght to 11
+    - add .'"' to the echo to add the " on the end
 - -[x] exercise 4
+    - add "&" in the foreach at $day so he keeps the value outside of the function
 - -[x] exercise 5
+    - change $letter <= 'z' -> $letter != 'aa'
 - -[x] exercise 6
+    - add "&" in the foreach at $param
+    - ```implode(" - ", $params);``` instead of ```implode($params," - ");```
+    - add semicolon to array hero lastnames
+    - count($heroes)-1
+    - return $randname instead of echo
 - -[x] exercise 7
+    - ```copyright(date('Y'));``` changed to ```copyright((int) date('Y'));```
 - -[x] exercise 8
-- exercise 9
-- exercise 10
+    - if statement "&&" instead of "||"
+    - echo "welcome John" instead of return
+- -[x] exercise 9
+    - if statement "== true" changed to "> -1"
+    - echo unacceptable found instead of return
+    - add return after echo unacceptable
+    - echo acceptable instead of return
+- -[x] exercise 10
+    - ```count($areTheseFruits)+1;``` instead of ```count($areTheseFruits);```
