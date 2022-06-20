@@ -21,8 +21,8 @@ This is what I feel like doing when coding `PHP` that doesn't mean that this sho
 **I very much encourage you to use xDebug as much as possible!**
 
 ## Must-have features
-Open up the [junior.php.broken](resources/junior.php.broken) file, read the comments, fix the code blocks as requested in the comments
-and put the final file [expert.php](resources/expert.php) in the repository folder as requested.
+Open up the [junior.php.broken](junior.php.broken) file, read the comments, fix the code blocks as requested in the comments
+and put the final file [expert.php](expert.php) in the repository folder as requested.
 
 You will change this junior code in expert code!
 ---
@@ -34,7 +34,7 @@ You will change this junior code in expert code!
 - -[x] exercise 4
 - -[x] exercise 5
 - -[x] exercise 6
-- exercise 7
+- -[x] exercise 7
 - exercise 8
 - exercise 9
 - exercise 10
