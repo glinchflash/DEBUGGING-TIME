@@ -35,6 +35,6 @@ You will change this junior code in expert code!
 - -[x] exercise 5
 - -[x] exercise 6
 - -[x] exercise 7
-- exercise 8
+- -[x] exercise 8
 - exercise 9
 - exercise 10
