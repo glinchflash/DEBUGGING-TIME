@@ -33,7 +33,7 @@ You will change this junior code in expert code!
     - change index number to the right index
 - -[x] exercise 3
     - put single quotation marks on string
-    - change offsetLenght to 11
+    - change offset Length to 11
     - add .'"' to the echo to add the " on the end
 - -[x] exercise 4
     - add "&" in the foreach at $day so he keeps the value outside of the function
